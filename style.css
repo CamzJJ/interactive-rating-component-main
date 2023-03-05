@@ -1,0 +1,136 @@
+/* VARIABLES */
+:root {
+  --dark-blue: #131518;
+  --light-blue: #262e38;
+  --orange: #fc7614;
+  --black: #181e27;
+  --white: #ffffff;
+  --light-gray: #969fad;
+  --dark-gray: #7c8798;
+  --gradient: linear-gradient(#232a34, #181e27);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Overpass", sans-serif;
+  font-size: 1rem;
+}
+
+.main {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--black);
+}
+
+.hidden {
+  display: none;
+}
+
+.card {
+  padding: 2rem;
+  margin: 0 1rem;
+  border-radius: 2rem;
+  max-width: 25.75rem;
+  max-height: 25.75rem;
+  background-image: var(--gradient);
+  background-origin: border-box;
+  background-repeat: no-repeat;
+  background-size: 100% 250%;
+}
+
+.card__heading {
+  color: var(--white);
+  font-size: 1.75rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.card__text {
+  color: var(--light-gray);
+  font-weight: 400;
+  margin-bottom: 1.5rem;
+}
+
+.card__list {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  list-style: none;
+}
+
+.card__rate {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  padding-top: 0.2em;
+  height: 3.188em;
+  width: 3.188em;
+  border-radius: 50%;
+  font-weight: 700;
+  color: var(--dark-gray);
+  background-color: var(--dark-blue);
+  transition: all 300ms;
+}
+
+.card__rate:hover,
+.card__rate:active {
+  color: var(--white);
+  background-color: var(--orange);
+}
+
+.card__rate--active {
+  color: var(--white);
+  background-color: var(--dark-gray);
+}
+
+.card__button {
+  font-weight: 700;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 50rem;
+  padding: 1rem;
+  letter-spacing: 0.125em;
+  width: 100%;
+  color: var(--white);
+  background-color: var(--orange);
+  transition: all 300ms;
+}
+.card__button:hover,
+.card__button:active {
+  color: var(--orange);
+  background-color: var(--white);
+}
+
+.card__star {
+  background-color: var(--dark-blue);
+  padding: 1.2rem;
+  border-radius: 50%;
+  margin-bottom: 2rem;
+}
+
+.card__rating {
+  font-size: 0.875rem;
+  padding: 0.5em 1.2em;
+  border-radius: 50em;
+  margin: 2rem 0;
+  color: var(--orange);
+  background-color: var(--light-blue);
+  width: max-content;
+}
+
+.card__face--2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.card__image-container {
+  display: flex;
+  justify-content: center;
+}
